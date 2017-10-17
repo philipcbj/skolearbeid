@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Oppgave1-3 - oblig 2</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script>
+    
+        window.onload = oppstart;
+        
+        function oppstart() {
+            document.getElementById("btnRegistrer").onclick = registrer;
+        }
+        
+        function registrer() {
+            var brukernavn = document.getElementById("txtBrukernavn").value;
+            var passord = document.getElementById("txtPassord").value;
+            var passordTo = document.getElementById("txtPassord2").value;
+            var alder = document.getElementById("txtAlder").value;
+            
+            if (brukernavn === "" && passord === "" && passordTo === "") {
+                document.getElementById("melding").innerHTML = "Feltene er tomme. Alle felter må fylles ut."
+            }
+            
+            else if (brukernavn === "") {
+                document.getElementById("melding").innerHTML = "Mangler brukernavn. Vennligst fyll ut."
+            }
+            
+            else if (passord === "") {
+                document.getElementById("melding").innerHTML = "Mangler passord. Vennligst fyll ut."
+            }
+            
+            else if (passordTo === ""){
+                document.getElementById("melding").innerHTML = "Gjenta passordet."
+            }
+            
+            else if (passordTo !== passord) {
+                document.getElementById("melding").innerHTML = "Passordene er ikke like."
+            }
+            
+            else if (passord.length <= 5 && passordTo.length <= 5) {
+                document.getElementById("melding").innerHTML = "Passordet må inneholde minst 6 tegn."
+            } 
+            else if (alder < 18) {
+                document.getElementById("melding").innerHTML = "Du er dessverre ikke gammel nok."
+            }
+                
+            else (document.getElementById("melding").innerHTML = "Takk for registreringen.")
+        }
+        
+    </script>
+    <style>
+    </style>
+</head>
+    <body>
+        
+        <header>
+            <nav>
+                <a href="oppgave1-2-3.html">Oppgave 1-3</a>
+                <a href="oppgave4.html">Oppgave 4</a>
+                <a href="oppgave5.html">Oppgave 5</a>
+                <a href="oppgave6.html">Oppgave 6</a>
+                <a href="oppgave7.html">Oppgave 7</a>
+            </nav>
+        </header>
+        
+        <main>
+            <table>
+                <tr>
+                    <th>Brukernavn: </th>
+                    <td><input type="text" id="txtBrukernavn" /></td>
+                </tr>
+                <tr>
+                    <th>Passord: </th>
+                    <td><input type="password" id="txtPassord" /></td>
+                </tr>
+                <tr>
+                    <th>Gjenta passord: </th>
+                    <td><input type="password" id="txtPassord2" /></td>
+                </tr>
+                <tr>
+                    <th>Alder: </th>
+                    <td><input type="number" id="txtAlder" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="button" id="btnRegistrer">Registrer</button></td>
+                </tr>
+            </table>
+
+            <p id="melding"></p>
+        </main>
+    </body>
+</html>

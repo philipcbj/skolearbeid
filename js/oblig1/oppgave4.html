@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>4 JavaScript - oblig 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
+    <script>
+        
+        window.onload = oppstart;
+        
+        var a = 0;
+        var b = 1;
+        var c = 2;
+        var d = 3;
+        var e = 4;
+        var f = 5;
+        var g = 6;
+        var h = 7;
+        var i = 8;
+        var j = 9;
+        
+       function oppstart() {
+           document.getElementById("knapp0").onclick = klikk0;
+           document.getElementById("knapp1").onclick = klikk1;
+           document.getElementById("knapp2").onclick = klikk2;
+           document.getElementById("knapp3").onclick = klikk3;
+           document.getElementById("knapp4").onclick = klikk4;
+           document.getElementById("knapp5").onclick = klikk5;
+           document.getElementById("knapp6").onclick = klikk6;
+           document.getElementById("knapp7").onclick = klikk7;
+           document.getElementById("knapp8").onclick = klikk8;
+           document.getElementById("knapp9").onclick = klikk9;
+       }
+        
+        function klikk0() {
+            document.getElementById("txtBoks").innerHTML += a;
+        }
+        function klikk1() {
+            document.getElementById("txtBoks").innerHTML += b;
+        }
+        function klikk2() {
+            document.getElementById("txtBoks").innerHTML += c;
+        }
+        function klikk3() {
+            document.getElementById("txtBoks").innerHTML += d;
+        }
+        function klikk4() {
+            document.getElementById("txtBoks").innerHTML += e;
+        }
+        function klikk5() {
+            document.getElementById("txtBoks").innerHTML += f;
+        }
+        function klikk6() {
+            document.getElementById("txtBoks").innerHTML += g;
+        }
+        function klikk7() {
+            document.getElementById("txtBoks").innerHTML += h;
+        }
+        function klikk8() {
+            document.getElementById("txtBoks").innerHTML += i;
+        }
+        function klikk9() {
+            document.getElementById("txtBoks").innerHTML += j;
+        }
+        
+        
+    </script>
+    <style>
+    </style>
+</head>
+    <body>
+        <header>
+            <h2>Oppgave 4</h2>
+            <h3>Oblig 1, innføring i programmering</h3><hr><br>
+        </header>
+        <div>
+            
+            <p id="txtBoks"></p><br/>
+            <p>
+                <input type="button" id="knapp0" value="0">
+                <input type="button" id="knapp1" value="1">
+                <input type="button" id="knapp2" value="2">
+                <input type="button" id="knapp3" value="3">
+                <input type="button" id="knapp4" value="4">
+            </p>
+            <p>
+                <input type="button" id="knapp5" value="5">
+                <input type="button" id="knapp6" value="6">
+                <input type="button" id="knapp7" value="7">
+                <input type="button" id="knapp8" value="8">
+                <input type="button" id="knapp9" value="9">
+            </p>
+        </div>
+        <footer>
+            <a href="oppgave1.html">oppgave1.html</a>
+            <a href="oppgave2.html">oppgave2.html</a>
+            <a href="oppgave3.html">oppgave3.html</a>
+            <a href="oppgave4.html">oppgave4.html</a>
+            <a href="oppgave5.html">oppgave5.html</a>
+            <a href="oppgave6.html">oppgave6.html</a>
+        </footer>
+    </body>
+</html>

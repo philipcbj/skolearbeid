@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>2 JavaScript - oblig 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
+    <script>
+    
+        window.onload = oppstart;
+        
+        function oppstart() {
+            document.getElementById("btnRiktigEn").onclick = visRiktig;
+            document.getElementById("btnGaltEn").onclick = visGalt;
+            document.getElementById("btnRiktigTo").onclick = visRiktig;
+            document.getElementById("btnGaltTo").onclick = visGalt;
+            document.getElementById("btnRiktigTre").onclick = visRiktig;
+            document.getElementById("btnGaltTre").onclick = visGalt;
+        }
+        
+        function visRiktig(){
+            alert("Riktig");
+        }
+        function visGalt(){
+            alert("Galt");
+        }
+    </script>
+    <style>
+    </style>
+</head>
+    <body>
+        <header>
+            <h2>Oppgave 2</h2>
+            <h3>Oblig 1, innføring i programmering</h3><hr><br>
+        </header>
+        <main>
+            <h4>Påstander:</h4>
+            <p>
+                En hypotese er det samme som en teori 
+                <button id="btnGaltEn" type="button">Sann</button>
+                <button id="btnRiktigEn" type="button">Usann</button>
+            </p>
+            <p>
+                Einstein var ikke flink i matematikk 
+                <button id="btnGaltTo" type="button">Sann</button>
+                <button id="btnRiktigTo" type="button">Usann</button>
+            </p>
+            <p>
+                Protonet ble oppdaget før nøytronet
+                <button id="btnRiktigTre" type="button">Sann</button>
+                <button id="btnGaltTre" type="button">Usann</button>
+            </p>
+        </main>
+        <footer>
+            <a href="oppgave1.html">oppgave1.html</a>
+            <a href="oppgave2.html">oppgave2.html</a>
+            <a href="oppgave3.html">oppgave3.html</a>
+            <a href="oppgave4.html">oppgave4.html</a>
+            <a href="oppgave5.html">oppgave5.html</a>
+            <a href="oppgave6.html">oppgave6.html</a>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - oblig 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
+    <script>
+    
+        window.onload = tegn;
+        
+        function tegn() {
+            var ctx = document.getElementById("tegneflate").getContext("2d");
+            
+            //Tak
+            ctx.beginPath();
+            ctx.moveTo(0, 200);
+            ctx.lineTo(300, 0);
+            ctx.lineTo(600, 200);
+            ctx.fillStyle = "green";
+            ctx.fill();
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            
+            //Blått hus - fundament
+            ctx.beginPath();
+            ctx.fillStyle = "blue";
+            ctx.rect(0, 200, 600, 200);
+            ctx.fill();
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            
+            
+            //Dør
+            ctx.beginPath();
+            ctx.fillStyle = "white";
+            ctx.rect(400, 240, 100, 160);
+            ctx.fill();
+            ctx.stroke();
+            
+            //Vindu
+            ctx.beginPath();
+            ctx.rect(100, 240, 100, 100)
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            
+            //Vindusdetalj vannrett
+            ctx.beginPath();
+            ctx.moveTo(100, 290);
+            ctx.lineTo(200, 290);
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            //Vindusdetalj loddrett
+            ctx.beginPath();
+            ctx.moveTo(150,240);
+            ctx.lineTo(150,340);
+            ctx.lineWidth = 3;
+            ctx.stroke();
+        }
+        
+        
+        
+    </script>
+    <style>
+    </style>
+</head>
+    <body>
+        <header>
+            <h2>Oppgave 5</h2>
+            <h3>Oblig 1, innføring i programmering</h3><hr><br>
+        </header>
+        <canvas id="tegneflate" width="605" height="405"></canvas>
+        <footer>
+            <a href="oppgave1.html">oppgave1.html</a>
+            <a href="oppgave2.html">oppgave2.html</a>
+            <a href="oppgave3.html">oppgave3.html</a>
+            <a href="oppgave4.html">oppgave4.html</a>
+            <a href="oppgave5.html">oppgave5.html</a>
+            <a href="oppgave6.html">oppgave6.html</a>
+        </footer>
+    </body>
+</html>

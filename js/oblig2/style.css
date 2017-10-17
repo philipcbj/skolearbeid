@@ -1,0 +1,11 @@
+header{
+    border-bottom: 1px solid grey;
+    text-align: center;
+    padding: 20px;
+}
+main{
+    padding: 20px;
+}
+tr{
+    text-align: right;
+}

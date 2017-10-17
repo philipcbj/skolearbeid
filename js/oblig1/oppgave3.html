@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - oblig 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
+    <script>
+    
+        window.onload = oppstart;
+        
+        function oppstart() {
+            document.getElementById("pluss").onclick = plusse;
+            document.getElementById("minus").onclick = subtrahere;
+            document.getElementById("gange").onclick = multiplisere;
+            document.getElementById("dele").onclick = dividere;
+        }
+        
+        function plusse() {
+            var tallA = Number(document.getElementById("txtEn").value);
+            var tallB = Number(document.getElementById("txtTo").value);
+            
+            var sumPluss = tallA + tallB;
+            
+            document.getElementById("svar").innerHTML = " = " + sumPluss;
+        }
+        
+        function subtrahere() {
+            var tallA = Number(document.getElementById("txtEn").value);
+            var tallB = Number(document.getElementById("txtTo").value);
+            
+            var sumMinus = tallA - tallB;
+            
+            document.getElementById("svar").innerHTML = " = " + sumMinus;
+        }
+        
+        function multiplisere() {
+            var tallA = Number(document.getElementById("txtEn").value);
+            var tallB = Number(document.getElementById("txtTo").value);
+            
+            var sumGange = tallA * tallB;
+            
+            document.getElementById("svar").innerHTML = " = " + sumGange;
+        }
+        
+        function dividere() {
+            var tallA = Number(document.getElementById("txtEn").value);
+            var tallB = Number(document.getElementById("txtTo").value);
+            var sumDividere = tallA / tallB;
+            
+            document.getElementById("svar").innerHTML = " = " + sumDividere;
+        }
+            
+        
+    </script>
+    <style>
+    </style>
+</head>
+    <body>
+        
+        <header>
+            <h2>Oppgave 3</h2>
+            <h3>Oblig 1, innføring i programmering</h3><hr><br>
+        </header>
+        <main>
+            <p>
+                <input id="txtEn" type="number" placeholder="Skriv et tall"/>
+                <button id="pluss" type="button">+</button> <button id="minus" type="button">-</button> <button id="gange" type="button">x</button> <button id="dele" type="button">/</button> 
+                <input id="txtTo" type="number" placeholder="Skriv et tall"/> <span id="svar"></span>
+            </p>
+        </main>
+        <footer>
+            <a href="oppgave1.html">oppgave1.html</a>
+            <a href="oppgave2.html">oppgave2.html</a>
+            <a href="oppgave3.html">oppgave3.html</a>
+            <a href="oppgave4.html">oppgave4.html</a>
+            <a href="oppgave5.html">oppgave5.html</a>
+            <a href="oppgave6.html">oppgave6.html</a>
+        </footer>
+    </body>
+</html>

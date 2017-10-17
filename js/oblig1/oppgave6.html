@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>6 JavaScript - oblig 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
+    <script>
+    
+        window.onload = oppstart;
+        
+        var antallVarer = 0;
+        
+        function oppstart() {
+            document.getElementById("btnLeggTil").onclick = leggTil;
+        }
+        
+        function leggTil() {
+            var antall = document.getElementById("txtAntall").value;
+            var vare = document.getElementById("txtVare").value;
+            antallVarer = antallVarer + 1;
+            
+            document.getElementById("liste").innerHTML += "<li>" + antall + " " + vare; 
+            document.getElementById("varerKlikk").innerHTML = antallVarer;
+        }
+        
+    </script>
+    <style>
+    </style>
+</head>
+    <body>
+        <header>
+            <h2>Oppgave 6</h2>
+            <h3>Oblig 1, innføring i programmering</h3><hr><br>
+        </header>
+        <main>
+            <h1>Handleliste</h1>
+
+                <p>
+                    Antall: <input type="number" id="txtAntall" /><br/>
+                    Vare: <input type="text" id="txtVare" /><br/>
+                    <button type="button" id="btnLeggTil">Legg til</button>
+                </p>
+
+            <h3>Liste:</h3>
+
+                <ul id="liste">
+
+                </ul>
+            <p>
+                Antall varer: <span id="varerKlikk">0</span>
+            </p>
+        </main>
+        <footer>
+            <a href="oppgave1.html">oppgave1.html</a>
+            <a href="oppgave2.html">oppgave2.html</a>
+            <a href="oppgave3.html">oppgave3.html</a>
+            <a href="oppgave4.html">oppgave4.html</a>
+            <a href="oppgave5.html">oppgave5.html</a>
+            <a href="oppgave6.html">oppgave6.html</a>
+        </footer>
+    </body>
+</html>

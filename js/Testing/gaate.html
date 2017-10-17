@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+    
+        window.onload = oppstart;
+        
+        function oppstart() {
+            document.getElementById("btnVelkomst") .onclick = visHilsen;
+        }
+        function visHilsen() {
+            alert("Hei og velkommen " + document.getElementById("txtnavn") .value + "!");
+        }
+    </script>
+    <style>
+    </style>
+</head>
+    <body>
+        Ditt navn: <input type="text" id="txtnavn">
+        <button type="button" id="btnVelkomst">OK</button>
+    </body>
+</html>

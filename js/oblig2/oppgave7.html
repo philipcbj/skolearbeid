@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Oppgave 7 - oblig 2</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script>
+    
+        window.onload = oppstart;
+        
+        function oppstart() {
+            document.getElementById("forlengs").onclick = skrivForlengs;
+            document.getElementById("baklengs").onclick = skrivBaklengs;
+            document.getElementById("delt2").onclick = skrivDelt2;
+            document.getElementById("delt3").onclick = skrivDelt3;
+            document.getElementById("partall").onclick = skrivPartall;
+            document.getElementById("oddetall").onclick = skrivOddetall;
+            document.getElementById("plussminus").onclick = skrivPlussminus;
+        }
+        
+        function skrivForlengs() {
+            document.getElementById("melding").innerHTML = "";
+            for (var i = 0; i <= 100; i += 1)
+                document.getElementById("melding").innerHTML += i + "<br/>";
+        }
+        function skrivBaklengs() {
+            document.getElementById("melding").innerHTML = "";
+            for (var i = 100; i >= 0; i -= 1)
+                document.getElementById("melding").innerHTML += i + "<br/>";
+        }
+        function skrivDelt2() {
+            document.getElementById("melding").innerHTML = "";
+            for (var i = 0; i <= 100; i += 0.5)
+                document.getElementById("melding").innerHTML += i + "<br/>";
+        }
+        function skrivDelt3() {
+            document.getElementById("melding").innerHTML = "";
+            for (var i = 3; i <= 100; i += 1){
+                if (i % 3 === 0)
+                document.getElementById("melding").innerHTML += i + "<br/>";
+            }
+        }
+        function skrivPartall() {
+            document.getElementById("melding").innerHTML = "";
+            for (var i = 0; i <= 100; i += 2)
+                document.getElementById("melding").innerHTML += i + "<br/>";
+        }
+        function skrivOddetall() {
+            document.getElementById("melding").innerHTML = "";
+            for (var i = 1; i <= 100; i += 2)
+                document.getElementById("melding").innerHTML += i + "<br/>";
+        }
+        function skrivPlussminus() {
+            document.getElementById("melding").innerHTML = "";
+            for (var i = 0; i <= 100; i += 1) {
+                if (i % 2 === 0)
+                document.getElementById("melding").innerHTML += i + "<br/>";
+                else {
+                    document.getElementById("melding").innerHTML += "-" + i + "<br />"
+                }
+            }
+        }
+        
+    </script>
+    <style>
+    </style>
+</head>
+    <body>
+        <header>
+            <nav>
+                <a href="oppgave1-2-3.html">Oppgave 1-3</a>
+                <a href="oppgave4.html">Oppgave 4</a>
+                <a href="oppgave5.html">Oppgave 5</a>
+                <a href="oppgave6.html">Oppgave 6</a>
+                <a href="oppgave7.html">Oppgave 7</a>
+            </nav>
+        </header>
+        <main>
+            <p>Lister fra 0-100 med gitte kriterier. Prøv å skriv ut!</p>
+            <button type="button" id="forlengs">Forlengs</button>
+            <button type="button" id="baklengs">Baklengs</button>
+            <button type="button" id="delt2">Delt på to</button>
+            <button type="button" id="delt3">Tall kun delelig med 3</button>
+            <button type="button" id="partall">Partall</button>
+            <button type="button" id="oddetall">Oddetall</button>
+            <button type="button" id="plussminus">Annethvert positivt/negativt</button>
+
+            <p id="melding"></p>
+        </main>
+    </body>
+</html>
