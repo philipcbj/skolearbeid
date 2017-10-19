@@ -30,6 +30,13 @@ main {
 section {
     grid-area: hoved;
     display: flex;
+    flex-flow: column;
+    /* Her blir artiklene liggende under hverandre */
+}
+article {
+    flex: auto;
+    margin-bottom: 5px;
+    
 }
 aside {
     grid-area: side;
