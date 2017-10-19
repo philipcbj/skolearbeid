@@ -1,0 +1,43 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "Nav Nav"
+        "main main"
+        "footer footer"  
+}
+header {
+    grid-area: header;
+    background: green;
+    text-align: center;
+}
+nav {
+    background: coral;
+    text-align: center;
+}
+main {
+    /*margin: auto;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    grid-area: main;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "hoved side"
+}
+section {
+    grid-area: hoved;
+    display: flex;
+}
+aside {
+    grid-area: side;
+    background: lightgrey;
+}
+footer {
+    grid-area: footer;
+    background: green;
+}
+
+
