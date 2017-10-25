@@ -1,46 +1,68 @@
 body {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas: 
-        "header header"
-        "Nav Nav"
-        "main main"
-        "footer footer"  
+        "header"
+        "nav"
+        "main"
+        "footer"  
 }
 header {
     grid-area: header;
-    background: green;
     text-align: center;
+    /*background-image: url(https://image.freepik.com/free-vector/memphis-pattern_1045-810.jpg);*/
 }
+
+/* farger overskrift */ 
+#bla{color: rgb(70, 136, 241);}
+#rod{color: rgb(232, 69, 60);}
+#gul{color: rgb(250, 187, 45);}
+
 nav {
+    grid-area: nav;
     background: coral;
     text-align: center;
 }
 main {
-    /*margin: auto;*/
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 1200px;
     grid-area: main;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "hoved side"
 }
-section {
+.hovedkolonne {
     grid-area: hoved;
     display: flex;
     flex-flow: column;
     /* Her blir artiklene liggende under hverandre */
 }
+.artikler {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.artikkeltekst{
+    padding-left: 10px;
+}
+.artikkelbilde{
+    background: grey;
+}
 article {
-    flex: auto;
-    margin-bottom: 5px;
     
+}
+.artikkelmal{
+    width: 800px;
+    margin: auto;
+}
+.artikkelmal > h2 {
+    /* STOR SKRIFT HER */
+}
+.artikkelmal > p{
+    padding-left: 20%;
 }
 aside {
     grid-area: side;
-    background: lightgrey;
 }
 footer {
     grid-area: footer;

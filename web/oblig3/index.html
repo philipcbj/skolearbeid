@@ -6,10 +6,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header> <!--bakgrunnsbilde her-->
-        <h1>Overskrift</h1>
+    <header> <!--bakgrunnsbilde her søkemotor av noe slag? -->
+        <h1><span id="bla">S</span><span  id="rod">E</span><span id="gul">O</span></h1>
         <nav>
-            <a href="#">Hjem</a>
+            <a href="index.html">Hjem</a>
             <a href="#">Kom i gang</a>
             <a href="#">Kode</a>
             <a href="#">Innhold</a>
@@ -20,30 +20,67 @@
     <main> <!-- Denne ønskes sentrert, ca. 960 px bredde -->
         <!-- Sidekolonne -->
         <aside>
-            Sidekolonne
+           <h2>Ressurser</h2>
+            <section>
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/hF515-0Tduk" frameborder="0" gesture="media" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h3>Artikler om SEO</h3>
+                <ul>
+                    <li><a href="https://searchengineland.com/guide/what-is-seo">What it SEO</a></li>
+                    <li><a href="https://moz.com/beginners-guide-to-seo">Beginners guide til SEO</a></li>
+                    <li></li>
+                </ul>
+            </section>
         </aside>
         <!-- Hovedkolonne -->
-        <section>
-            <article><!-- mørkere overskrift, og grå ingress. Skyggehover -->
-                <h2>Kom i gang</h2>
-                <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
+        <section class="hovedkolonne">
+            <h2>Artikler</h2>
+            <article class="artikler">
+               <!-- mørkere overskrift, og grå ingress. Skyggehover -->
+                <div class="artikkelbilde">
+                    bilde
+                </div>
+                <div class="artikkeltekst">
+                    <h2>Kom i gang</h2>
+                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
+                    <a href="#">Les mer</a>
+                </div>
             </article>
-            <article>
-                <h2>Kode</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
+            <article class="artikler">
+                <div class="artikkelbilde">
+                    bilde
+                </div>
+                <div class="artikkeltekst">
+                    <h2>Kode</h2>
+                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
+                    <a href="#">Les mer</a>
+                </div>
             </article>
-            <article>
-                <h2>Analyse</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
+            <article class="artikler">
+               <div class="artikkelbilde">
+                    bilde
+                </div>
+                <div class="artikkeltekst">
+                    <h2>Innhold</h2>
+                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
+                    <a href="#">Les mer</a>
+                </div>
             </article>
-            <article>
-                <h2>Sass</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
+            <article class="artikler">
+                <div class="artikkelbilde">
+                    bilde
+                </div>
+                <div class="artikkeltekst">
+                    <h2>Analyse</h2>
+                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
+                    <a href="#">Les mer</a>
+                </div>
             </article>
         </section>
     </main>
     <footer>
-        Footer
+        Philip Christopher Borgli Jensen | philip.c.jensen@hiof.no
     </footer>
 </body>
 </html>
