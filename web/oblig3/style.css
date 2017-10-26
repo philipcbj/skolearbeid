@@ -23,7 +23,7 @@ nav {
     background: coral;
     text-align: center;
 }
-main {
+.forside {
     margin-top: 20px;
     margin-bottom: 20px;
     grid-area: main;
