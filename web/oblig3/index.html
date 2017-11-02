@@ -4,20 +4,23 @@
     <meta charset="utf-8">
     <title>Oblig 3</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&7CSlabo+27px" rel="stylesheet">
 </head>
 <body>
-    <header> <!--bakgrunnsbilde her søkemotor av noe slag? -->
-        <h1><span id="bla">S</span><span  id="rod">E</span><span id="gul">O</span></h1>
+    <header> 
+        <div class="headerBilde">
+            <h1 class="forsidetekst"><span id="bla">S</span><span  id="rod">E</span><span id="gul">O</span></h1>
+        </div>
         <nav>
             <a href="index.html">Hjem</a>
             <a href="kom-i-gang.html">Kom i gang</a>
-            <a href="#">Kode</a>
-            <a href="#">Innhold</a>
-            <a href="#">Analyse</a>
-            <a href="#">Sass</a>
+            <a href="kode.html">Kode</a>
+            <a href="innhold.html">Innhold</a>
+            <a href="analyse.html">Analyse</a>
+            <a href="analyse.html">Sass</a>
         </nav>
     </header>
-    <main class="forside"> <!-- Denne ønskes sentrert, ca. 960 px bredde -->
+    <main class="forside">
         <!-- Sidekolonne -->
         <aside>
            <h2>Ressurser</h2>
@@ -40,50 +43,49 @@
         <section class="hovedkolonne">
             <h2>Artikler</h2>
             <article class="artikler">
-               <!-- mørkere overskrift, og grå ingress. Skyggehover -->
                 <div class="artikkelbilde">
-                    bilde
+                     <img src="bilder/SEO-stor.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
                 </div>
                 <div class="artikkeltekst">
                     <h2>Kom i gang</h2>
-                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
-                    <a href="kom-i-gang.html">Les mer</a>
+                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
+                    <a class="knappLesMer" href="kom-i-gang.html">Les mer</a>
                 </div>
             </article>
             <article class="artikler">
                 <div class="artikkelbilde">
-                    bilde
+                    <img src="bilder/kode.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
                 </div>
                 <div class="artikkeltekst">
                     <h2>Kode</h2>
-                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
-                    <a href="#">Les mer</a>
+                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
+                    <a class="knappLesMer" href="kode.html">Les mer</a>
                 </div>
             </article>
             <article class="artikler">
                <div class="artikkelbilde">
-                    bilde
+                    <img src="bilder/blisett.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
                 </div>
                 <div class="artikkeltekst">
                     <h2>Innhold</h2>
-                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
-                    <a href="#">Les mer</a>
+                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
+                    <a class="knappLesMer" href="innhold.html">Les mer</a>
                 </div>
             </article>
             <article class="artikler">
                 <div class="artikkelbilde">
-                    bilde
+                    <img src="bilder/analyse.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
                 </div>
                 <div class="artikkeltekst">
                     <h2>Analyse</h2>
-                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p>
-                    <a href="#">Les mer</a>
+                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
+                    <a class="knappLesMer" href="analyse.html">Les mer</a>
                 </div>
             </article>
         </section>
     </main>
     <footer>
-        Philip Christopher Borgli Jensen | philip.c.jensen@hiof.no
+        Philip Christopher Borgli Jensen | E-post: <a href="mailto:philip.c.jensen@hiof.no">philip.c.jensen@hiof.no</a>
     </footer>
 </body>
 </html>
