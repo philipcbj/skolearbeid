@@ -18,6 +18,7 @@ p {
 header {
     grid-area: header;
     text-align: center;
+    border-bottom: 1px solid #eee;
 }
 .headerBilde {
     background-image: url(bilder/spiration%20dark.png);
@@ -32,9 +33,9 @@ header {
 }
 
 /* farger overskrift */ 
-#bla{color: rgb(70, 136, 241);}
-#rod{color: rgb(232, 69, 60);}
-#gul{color: rgb(250, 187, 45);}
+.bla{color: rgb(70, 136, 241);}
+.rod{color: rgb(232, 69, 60);}
+.gul{color: rgb(250, 187, 45);}
 
 nav {
     grid-area: nav;
@@ -43,7 +44,7 @@ nav {
 nav > a {
     color: black;
     padding: 15px;
-    font-family: 'Slabo 27px', serif;
+    font-size: 0.8em;
 }
 nav > a:hover {
     text-decoration: underline;
@@ -89,14 +90,15 @@ nav > a:visited {
     margin: auto;
     border-bottom: 2px solid #eee;
     padding: 20px;
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 .artikkelmal > h2 {
-    border-bottom: 1px solid #eee;
-    /* STOR SKRIFT HER */
+    border: 1px solid black;
 }
 .artikkelmal > p{
     padding-left: 20%;
+    line-height: 1.5em;
+    font-size: 1.2em;
 }
 .bildeArtikkel {
     width: 80%;
@@ -105,7 +107,7 @@ nav > a:visited {
 }
 aside {
     grid-area: side;
-    border-left: 3px solid #eee;
+    border-left: 3px solid rgb(232, 69, 60);
     padding-left: 10px;
 }
 aside > section {
@@ -113,7 +115,6 @@ aside > section {
 }
 footer {
     grid-area: footer;
-    background: rgb(58, 167, 86);
     height: 50px;
     text-align: center;
 }
@@ -129,7 +130,7 @@ a:active{}
     border: 1px solid rgb(232, 69, 60);
     padding: 10px;
     color: rgb(232, 69, 60);
-    
+    font-size: 0.9em;
 }
 .knappLesMer:hover {
     background: rgb(232, 69, 60);
@@ -137,7 +138,7 @@ a:active{}
 }
 
 main {
-    border-bottom: 3px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 font-family: 'Slabo 27px', serif;
 font-family: 'Merriweather', serif;
