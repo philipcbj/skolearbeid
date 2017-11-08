@@ -7,10 +7,10 @@ body {
         "main"
         "footer"  
 }
-h1, h2, h3, a {
+h1, h2, h3, h4, a {
     font-family: 'Merriweather', serif;
 }
-p {
+p, li {
     font-family: 'Slabo 27px', serif;
     color: rgba(0,0,0,.75);
     line-height: 1.3em;
@@ -25,7 +25,7 @@ header {
     background-size: auto;
     height: 100px;
 }
-.forsidetekst {
+.headertekst {
     padding-top: 10px;
     font-size: 4.5rem;
     margin: 0;
@@ -47,15 +47,14 @@ nav > a {
     font-size: 0.8em;
 }
 nav > a:hover {
-    text-decoration: underline;
-}
-nav > a:focus {
-    text-decoration: underline;
-    border-bottom: 3px solid rgb(232, 69, 60);
+    border-bottom: 3px solid rgb(250, 187, 45);
 }
 nav > a:visited {
     color: black;
     text-decoration: none;
+}
+.aktiv {
+    border-bottom: 3px solid rgb(232, 69, 60);
 }
 .forside {
     margin-top: 20px;
@@ -85,26 +84,29 @@ nav > a:visited {
     padding-left: 30px;
     padding-bottom: 30px;
 }
+/* Artikkelsider */
 .artikkelmal{
-    width: 800px;
-    margin: auto;
-    border-bottom: 2px solid #eee;
-    padding: 20px;
-    line-height: 1.3em;
+    padding: 60px;
+    line-height: 1.2em;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
 }
-.artikkelmal > h2 {
-    border: 1px solid black;
+.artikkelmal h1 {
+    font-size: 1.9rem;
 }
-.artikkelmal > p{
-    padding-left: 20%;
-    line-height: 1.5em;
-    font-size: 1.2em;
+.artikkelmal h3 {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
 }
-.bildeArtikkel {
-    width: 80%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.artikkelmal p {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
+.artikkelmal picture img {
+    max-width: 80%;
+}
+/* Artikkelsider slutt */
 aside {
     grid-area: side;
     border-left: 3px solid rgb(232, 69, 60);
@@ -122,9 +124,6 @@ footer {
 a {
     text-decoration: none;
 }
-a:visited{}
-a:hover{}
-a:active{}
 
 .knappLesMer {
     border: 1px solid rgb(232, 69, 60);
@@ -140,5 +139,108 @@ a:active{}
 main {
     border-bottom: 1px solid #eee;
 }
+code {
+    background: #eee;
+    color: rgb(232, 69, 60);
+    font-size: 1.1em;
+    margin: 1.5rem;
+    padding: 10px;
+    border-left: 3px solid #333;
+}
+
+/* fonter 
 font-family: 'Slabo 27px', serif;
-font-family: 'Merriweather', serif;
+font-family: 'Merriweather', serif;*/
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 850px) {
+    section > h1 {
+        margin: 20px;
+    }
+    .artikkeltekst {
+        padding-left: 20px;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    nav > a{
+        display: block;
+        text-align: center;
+        /*margin: 10px;*/
+        flex: 1;
+        border-right: 1px solid #eee;
+    }
+    body {
+        margin: 0;
+    }
+    .forside {
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        background: #eee;
+        order: 1;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+    iframe {
+        width: 80%;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    ul > li > a {
+        display: block;
+        background-color: #333;
+        padding: 25px;
+        text-decoration: none;
+        margin: 0;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .artikkeltekst {
+        padding-left: 0;
+    }
+    header {
+        background-color: yellow;
+    }
+    .forside {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        display: inline;
+    }
+    aside {
+        padding: 0;
+    }
+    .artikler {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }    
+    .artikkelmal {
+        padding: 20px;
+    }
+    .artikkelmal picture img {
+    max-width: 100%;
+}
+}
+
+.viktigtekst {
+    border-left: 5px solid rgb(70, 136, 241);
+    display: inline-block;
+    background: #eee;
+    padding: 1rem;
+    font-style: italic;
+}
