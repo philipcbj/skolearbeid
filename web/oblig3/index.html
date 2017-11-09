@@ -10,7 +10,7 @@
 <body>
     <header> 
         <div class="headerBilde">
-            <h1 class="headertekst"><span class="bla">S</span><span  class="rod">E</span><span class="gul">O</span></h1>
+            <a href="index.html"><h1 class="headertekst"><span class="bla">S</span><span  class="rod">E</span><span class="gul">O</span></h1></a>
         </div>
         <label for="mobilmeny">&#9776;</label>
         <input type="checkbox" id="mobilmeny" />
@@ -39,36 +39,46 @@
                 </ul>
             </section>
             <section>
-                <a href="#"><button type="button">Googlesøk</button></a>
+               <h3>Googlesøk for ytterligere stoff</h3>
+                <a href="http://lmgtfy.com/?q=seo" target="_blank"><button type="button">Søk SEO</button></a>
             </section>
         </aside>
         <!-- Hovedkolonne -->
         <section class="hovedkolonne">
             <h1>Artikler</h1>
             <article class="artikler">
-                <div class="artikkelbilde">
-                     <img src="bilder/SEO-stor.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
-                </div>
+                <picture>
+                    <source srcset="bilder/SEO-medium.jpg" media=(max-width: 850px) />
+                    <source srcset="bilder/SEO-liten.jpg" media=(max-width: 600px) />
+                    <img src="bilder/SEO-stor.jpg" />
+                </picture>
                 <div class="artikkeltekst">
                     <h2>Kom i gang</h2>
-                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
+                    <p>
+                        Vi sjekker rutetider for toget, matoppskrifter og hvilken TV du bør kjøpe før vinter-OL i Pyongyang. Hva er det som bestemmer våre søkeresultater? Bli kjent med SEO. 
+                    </p><br />
                     <a class="knappLesMer" href="kom-i-gang.html">Les mer</a>
                 </div>
             </article>
             <article class="artikler">
-                <div class="artikkelbilde">
-                    <img src="bilder/kode.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
-                </div>
+                <picture>
+                    <source srcset="bilder/kode-medium.jpg" media=(max-width: 850px) />
+                    <source srcset="bilder/kode-liten.jpg" media=(max-width: 600px) />
+                    <img src="bilder/kode-stor.jpg" />
+                </picture>
                 <div class="artikkeltekst">
                     <h2>Kode</h2>
-                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
+                    <p>
+                        Koden er vesentlig for å oppnå god SEO. Tipsene du bør ha i bakhodet ved kodingen finner du i denne artikkelen.
+                    </p><br />
                     <a class="knappLesMer" href="kode.html">Les mer</a>
                 </div>
             </article>
             <article class="artikler">
-               <div class="artikkelbilde">
-                    <img src="bilder/blisett.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
-                </div>
+               <picture>
+                    <source srcset="bilder/blisett-liten.jpg" media=(max-width: 600px) />
+                    <img src="bilder/blisett.jpg" />
+                </picture>
                 <div class="artikkeltekst">
                     <h2>Innhold</h2>
                     <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
@@ -76,9 +86,10 @@
                 </div>
             </article>
             <article class="artikler">
-                <div class="artikkelbilde">
-                    <img src="bilder/analyse.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
-                </div>
+                <picture>
+                    <source srcset="bilder/analyse-liten.jpg" media=(max-width: 600px) />
+                    <img src="bilder/analyse.jpg" />
+                </picture>
                 <div class="artikkeltekst">
                     <h2>Analyse</h2>
                     <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
@@ -89,7 +100,7 @@
     </main>
     <footer>
         <p>
-            Philip Christopher Borgli Jensen | E-post: <a href="mailto:philip.c.jensen@hiof.no">philip.c.jensen@hiof.no</a>
+            Philip Christopher Borgli Jensen - E-post: <a href="mailto:philip.c.jensen@hiof.no">philip.c.jensen@hiof.no</a>
         </p>
     </footer>
 </body>

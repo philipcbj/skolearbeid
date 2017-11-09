@@ -82,6 +82,9 @@ nav > a:visited {
     padding: 5px;
     margin-bottom: 30px;
 }
+.artikler picture img {
+    max-width: 100%;
+}
 .artikler:hover {
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .05);
 }
@@ -118,6 +121,12 @@ nav > a:visited {
     padding: 1rem;
     font-family: 'Merriweather', serif;
 }
+.artikkelmal .viktigtekst {
+    font-size: 0.9rem;
+}
+.artikkelmal a {
+    font-size: 0.9rem;
+}
 /* Artikkelsider slutt */
 aside {
     grid-area: side;
@@ -131,6 +140,10 @@ footer {
     grid-area: footer;
     height: 50px;
     text-align: center;
+}
+footer a {
+    font-size: 0.9rem;
+    text-decoration: underline;
 }
 /* Linker */
 a {
@@ -149,15 +162,15 @@ a {
 }
 
 main {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;    
 }
 code {
     background: #eee;
     color: rgb(232, 69, 60);
     font-size: 1.1em;
-    margin: 1.5rem;
+    /*margin: 1.5rem;*/
     padding: 10px;
-    border-left: 3px solid #333;
+    border-left: 3px solid rgb(250, 187, 45);
 }
 
 /* fonter 
@@ -268,3 +281,13 @@ font-family: 'Merriweather', serif;*/
 }
 
 
+
+button {
+    padding: 1.2rem;
+    border-radius: 0.2rem;
+    background: rgb(70, 136, 241);
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
