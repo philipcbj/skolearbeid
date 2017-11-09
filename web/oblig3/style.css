@@ -31,7 +31,12 @@ header {
     margin: 0;
     letter-spacing: 0.1em;
 }
-
+label {
+    display: none;
+}
+#mobilmeny {
+    display: none;
+}
 /* farger overskrift */ 
 .bla{color: rgb(70, 136, 241);}
 .rod{color: rgb(232, 69, 60);}
@@ -214,18 +219,36 @@ font-family: 'Merriweather', serif;*/
 }
 
 @media screen and (max-width: 600px) {
+    label {
+        display: block;
+        cursor: pointer;
+        float: right;
+        margin: 1rem;
+        font-size: 1.3rem;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    nav a {
+        display: block;
+        border-bottom: 1px solid #eee;
+        margin: 0;
+    }
+    #mobilmeny:checked + nav {
+        display: inline-block;
+    }
+    .aktiv {
+        border-top: 2px solid rgb(232, 69, 60);
+        border-bottom: 2px solid rgb(232, 69, 60);
+    }
     .artikkeltekst {
         padding-left: 0;
-    }
-    header {
-        background-color: yellow;
     }
     .forside {
         display: flex;
         flex-direction: column;
-    }
-    nav {
-        display: inline;
     }
     aside {
         padding: 0;
