@@ -43,7 +43,7 @@ nav {
 }
 nav > a {
     color: black;
-    padding: 15px;
+    padding: 1rem;
     font-size: 0.75rem;
 }
 nav > a:hover {
@@ -107,7 +107,6 @@ nav > a:visited {
     max-width: 80%;
 }
 .viktigtekst {
-    font-size: 0.8rem;
     border-left: 5px solid rgb(70, 136, 241);
     display: inline-block;
     background: #eee;
