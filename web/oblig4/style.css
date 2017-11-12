@@ -6,7 +6,7 @@ body {
 h1,h2,h3,h4 {
     font-family: 'Roboto', sans-serif;
 }
-p, a {
+p, a, li {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.9);
@@ -31,7 +31,7 @@ main .hovedside {
     padding: 1rem;
     text-align: center;
     border: 1px solid #eee;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.9);
 }
 .navheader {
@@ -57,6 +57,11 @@ nav a:hover {
     line-height: 1.5rem;
     padding: 0.5rem;
 }
+.artikkelmal p img{
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 main nav article {
     padding: 1rem;
     margin-right: 1rem;
@@ -67,7 +72,10 @@ main nav article {
 }
 footer {
     text-align: center;
+}
+footer p {
     padding: 1rem;
+    color: #f4f4f4;
 }
 label {
     display: none;
@@ -119,4 +127,7 @@ label {
     #meny:checked + nav {
     display: block;
 }
+}
+.farge1 {
+    background: #5E4654;
 }
