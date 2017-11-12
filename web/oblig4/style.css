@@ -13,15 +13,19 @@ p, a {
 }
 header h1{
     display: inline-block;
+    color: rgba(0, 0, 0, 0.9);
 }
 main {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "sidebar main";
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
 }
 section {
     grid-area: main;
     background: #D5D5D5;
+    border: 1px solid #eee;
 }
 main .hovedside {
     padding: 1rem;
@@ -54,16 +58,16 @@ nav a:hover {
     padding: 0.5rem;
 }
 main nav article {
-    position: sticky;
-    top: 0;
     padding: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #eee;
+    position: sticky;
+    top: 0;
 }
 footer {
-    background: #6D7793;
-    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
 }
 label {
     display: none;
@@ -115,6 +119,4 @@ label {
     #meny:checked + nav {
     display: block;
 }
-
 }
-
