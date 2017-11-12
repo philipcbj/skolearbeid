@@ -46,9 +46,8 @@ nav a {
     color: #f4f4f4;
     font-size: 0.8rem;
 }
-nav a:hover {
+a:hover {
     text-decoration: underline;
-    /*font-size: 0.9rem;*/
 }
 .aktiv {
     font-style: italic;
@@ -56,6 +55,9 @@ nav a:hover {
 .artikkelmal {
     line-height: 1.5rem;
     padding: 0.5rem;
+}
+.artikkelmal li, a {
+    color: #5E4654;
 }
 .artikkelmal p img{
     max-width: 100%;
@@ -100,7 +102,9 @@ label {
 .overcast {
     background: #9099A2;
 }
-
+.farge1 {
+    background: #5E4654;
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 650px) {
@@ -128,6 +132,4 @@ label {
     display: block;
 }
 }
-.farge1 {
-    background: #5E4654;
-}
+
