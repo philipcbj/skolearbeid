@@ -165,12 +165,12 @@ main {
     border-bottom: 1px solid #eee;    
 }
 code {
+    display: inline-block;
     background: #eee;
-    color: rgb(232, 69, 60);
     font-size: 1.1em;
     /*margin: 1.5rem;*/
     padding: 10px;
-    border-left: 3px solid rgb(250, 187, 45);
+    border-left: 5px solid rgb(250, 187, 45);
 }
 
 /* fonter 
