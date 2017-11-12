@@ -2,17 +2,20 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Oblig 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kom i gang med SEO</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&7CSlabo+27px" rel="stylesheet">
 </head>
 <body>
     <header> 
         <div class="headerBilde">
-            <h1 class="forsidetekst"><span id="bla">S</span><span  id="rod">E</span><span id="gul">O</span></h1>
+            <a href="index.html"><h1 class="headertekst"><span class="bla">S</span><span  class="rod">E</span><span class="gul">O</span></h1></a>
         </div>
+        <label for="mobilmeny">&#9776;</label>
+        <input type="checkbox" id="mobilmeny" />
         <nav>
-            <a href="index.html">Hjem</a>
+            <a href="index.html" class="aktiv">Hjem</a>
             <a href="kom-i-gang.html">Kom i gang</a>
             <a href="kode.html">Kode</a>
             <a href="innhold.html">Innhold</a>
@@ -23,12 +26,12 @@
     <main class="forside">
         <!-- Sidekolonne -->
         <aside>
-           <h2>Ressurser</h2>
+           <h1>Ressurser</h1>
             <section>
                 <iframe width="100%" height="250" src="https://www.youtube.com/embed/hF515-0Tduk" frameborder="0" gesture="media" allowfullscreen></iframe>
             </section>
             <section>
-                <h3>Artikler om SEO (ikon)</h3>
+                <h3>Artikler om SEO</h3>
                 <ul>
                     <li><a href="https://searchengineland.com/guide/what-is-seo" target="_blank">What it SEO</a></li>
                     <li><a href="https://moz.com/beginners-guide-to-seo" target="_blank">Beginners guide til SEO</a></li>
@@ -36,56 +39,73 @@
                 </ul>
             </section>
             <section>
-                <a href="#"><button type="button">Googlesøk</button></a>
+               <h3>Googlesøk for ytterligere stoff</h3>
+                <a href="http://lmgtfy.com/?q=seo" target="_blank"><button type="button">Søk SEO</button></a>
             </section>
         </aside>
         <!-- Hovedkolonne -->
         <section class="hovedkolonne">
-            <h2>Artikler</h2>
+            <h1>Artikler</h1>
             <article class="artikler">
-                <div class="artikkelbilde">
-                     <img src="bilder/SEO-stor.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
-                </div>
+                <picture>
+                    <source srcset="bilder/SEO-medium.jpg" media=(max-width: 850px) />
+                    <source srcset="bilder/SEO-liten.jpg" media=(max-width: 600px) />
+                    <img src="bilder/SEO-stor.jpg" />
+                </picture>
                 <div class="artikkeltekst">
                     <h2>Kom i gang</h2>
-                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
+                    <p>
+                        Det gjøres milliarder av søk hos Google hver eneste dag. Hva er det som bestemmer våre søkeresultater? Bli kjent med SEO. 
+                    </p><br />
                     <a class="knappLesMer" href="kom-i-gang.html">Les mer</a>
                 </div>
             </article>
             <article class="artikler">
-                <div class="artikkelbilde">
-                    <img src="bilder/kode.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
-                </div>
+                <picture>
+                    <source srcset="bilder/kode-medium.jpg" media=(max-width: 850px) />
+                    <source srcset="bilder/kode-liten.jpg" media=(max-width: 600px) />
+                    <img src="bilder/kode-stor.jpg" />
+                </picture>
                 <div class="artikkeltekst">
                     <h2>Kode</h2>
-                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
+                    <p>
+                        Koden er vesentlig for å oppnå god SEO. Tipsene du bør ha i bakhodet ved kodingen finner du i denne artikkelen.
+                    </p><br />
                     <a class="knappLesMer" href="kode.html">Les mer</a>
                 </div>
             </article>
             <article class="artikler">
-               <div class="artikkelbilde">
-                    <img src="bilder/blisett.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
-                </div>
+               <picture>
+                    <source srcset="bilder/blisett-liten.jpg" media=(max-width: 600px) />
+                    <img src="bilder/blisett.jpg" />
+                </picture>
                 <div class="artikkeltekst">
                     <h2>Innhold</h2>
-                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
+                    <p>
+                        Det å ha trafikk på et nettsted er bra, men like viktig er det at forbrukeren finner det den søker etter. Er nøkkelord så viktig? 
+                    </p><br />
                     <a class="knappLesMer" href="innhold.html">Les mer</a>
                 </div>
             </article>
             <article class="artikler">
-                <div class="artikkelbilde">
-                    <img src="bilder/analyse.jpg" alt="Animasjon av teksten SEO." style="width: 100%;">
-                </div>
+                <picture>
+                    <source srcset="bilder/analyse-liten.jpg" media=(max-width: 600px) />
+                    <img src="bilder/analyse.jpg" />
+                </picture>
                 <div class="artikkeltekst">
                     <h2>Analyse</h2>
-                    <p>SEO Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium arcu sollicitudin libero dictum pretium. Nunc eleifend arcu et mi tempor imperdiet in non turpis.</p><br />
+                    <p>
+                        Vi ser på konkrete eksempler hentet fra denne siden på tiltak for å oppnå god SEO.
+                    </p><br />
                     <a class="knappLesMer" href="analyse.html">Les mer</a>
                 </div>
             </article>
         </section>
     </main>
     <footer>
-        Philip Christopher Borgli Jensen | E-post: <a href="mailto:philip.c.jensen@hiof.no">philip.c.jensen@hiof.no</a>
+        <p>
+            Philip Christopher Borgli Jensen - E-post: <a href="mailto:philip.c.jensen@hiof.no">philip.c.jensen@hiof.no</a>
+        </p>
     </footer>
 </body>
 </html>

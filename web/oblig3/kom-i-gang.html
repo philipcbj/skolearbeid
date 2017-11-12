@@ -2,38 +2,92 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Oblig 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO - Kom i gang</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&7CSlabo+27px" rel="stylesheet">
 </head>
 <body>
-    <header> 
+   <header> 
         <div class="headerBilde">
-            <h1 class="forsidetekst"><span id="bla">S</span><span  id="rod">E</span><span id="gul">O</span></h1>
+            <a href="index.html"><h1 class="headertekst"><span class="bla">S</span><span  class="rod">E</span><span class="gul">O</span></h1></a>
         </div>
+        <label for="mobilmeny">&#9776;</label>
+        <input type="checkbox" id="mobilmeny" />
         <nav>
             <a href="index.html">Hjem</a>
-            <a href="kom-i-gang.html">Kom i gang</a>
+            <a href="kom-i-gang.html" class="aktiv">Kom i gang</a>
             <a href="kode.html">Kode</a>
             <a href="innhold.html">Innhold</a>
             <a href="analyse.html">Analyse</a>
             <a href="analyse.html">Sass</a>
         </nav>
     </header>
-    <main>
+    <main class="forside">
+        <!-- Sidekolonne -->
+        <aside>
+           <h1>Ressurser</h1>
+            <section>
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/hF515-0Tduk" frameborder="0" gesture="media" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h3>Artikler om SEO (ikon)</h3>
+                <ul>
+                    <li><a href="https://searchengineland.com/guide/what-is-seo" target="_blank">What it SEO</a></li>
+                    <li><a href="https://moz.com/beginners-guide-to-seo" target="_blank">Beginners guide til SEO</a></li>
+                    <li><a href="https://no.wikipedia.org/wiki/S%C3%B8kemotoroptimalisering" target="_blank">Søkemotoroptimalisering</a></li>
+                </ul>
+            </section>
+            <section>
+               <h3>Googlesøk for ytterligere stoff</h3>
+                <a href="http://lmgtfy.com/?q=seo"><button type="button">Søk SEO</button></a>
+            </section>
+        </aside>
+        <!-- Hovedkolonne -->
         <article class="artikkelmal">
-            <h2>SEO - search engine optimalization</h2>
+            <h1>Kom i gang</h1>
+            <h3>SEO - search engine optimalization</h3>
+            <picture>
+                <source srcset="bilder/kig-liten.jpg" media="(max-width: 600px)" />
+                <source srcset="bilder/kig-medium.jpg" media="(max-width: 850px)" />
+                <img src="bilder/kig-stor.jpg" />
+            </picture>
             <p>
-                Søkemotoroptimalisering handler om å være synlig på internett. Tiden der man tar en tur til byen for å se om man kan finne det man trenger i butikker er forbi - nå er det Google, Bing, Yahoo m.fl. som regjerer. Det er heller ikke lenger bare én bonde som selger egg i området. Nå konkurrer man ofte i et globalt marked.
-                <img class="bildeArtikkel" src="http://helpdeskdirect.net/wp-content/uploads/2016/06/google-yahoo-bing.jpg" alt="De mest brukte søkemotorene Google, Bing og Yahoo." />
+                <strong>Søkemotoroptimalisering</strong> handler om å gjøre seg synlig på internett. Tiden der man tar en tur til byen for å se om man kan finne det man trenger i butikker er forbi - nå er det Google, Bing, Yahoo m.fl. som regjerer. Det er heller ikke lenger bare én bonde som selger egg i området. Tall fra <a href="https://www.ssb.no/virksomheter-foretak-og-regnskap/statistikker/bedrifter/aar/2017-01-20" rel="nofollow">SSB</a> viser at det var ca. 565 000 registrerte virksomheter i Norge ved inngangen til 2017. Seo kan vise seg å være den lureste "investeringen" virksomheter kan gjøre.
+            </p>
+            <p class="viktigtekst">
+                565 000 virksomheter i Norge i 2017. Søkemotoroptimalisering kan gjøre at du blir sett.
             </p>
             <p>
-                Som virksomhet er man avhengig av kunder som kjøper dine varer og tjenester. I 2017 har man ytterst sjeldent monopol innen sin bransje, og derfor er det kritisk din virksomhet kommer til syne når forbrukeren gjør sin «research» hos søkemotorene. Søkemotoroptimalisering handler om gjøre seg synlig på internett. 
+                I 2017 har man ytterst sjeldent monopol innen sin bransje, og derfor er det at kritisk din virksomhet kommer til syne når forbrukeren gjør sin «research» hos søkemotorene. Med ca. 10 treff på førstesiden vil en potensiell kunde ikke vite at du engang eksisterer om du ikke er på førstesiden. Søkeoptimalisering gjør det mulig å legge til rette slik at søkemotorene og forbrukerne kan finne deg høyt rangert i listene. Med listene mener vi søkeresultater som ikke er betalt via annonse, de såkalte <i>organiske</i> søkeresultatene. Ved å lære litt om hvordan søkemotorene opererer, og hvordan forbrukerne gjør sine søk, kan man gjøre flere tiltak når man utformer nettsteder.
             </p>
+            <h4>SEO - HOVEDPUNKTENE</h4>
+            <p>
+                Noe av det viktigste man må huske på når det kommer til søkemotoroptimalisering er at søkemotorene ønsker å gi deg som kunde det beste resultatet. Det baseres i stor grad på <i>autoritet, kvalitet og relevans.</i> Det er et samspill mellom forbruker, kvalitet av innhold hos tilbyder og populariteten til siden.
+            </p>
+            <p>
+                I artiklene som du finner på denne nettsiden ser vi nærmere på ting du bør tenke på hva angår både koding og innhold på nettsteder for å oppnå god SEO. Det er viktig å være klar over at algoritmene utvikles daglig, slik at man her må holde seg oppdatert. <a href="kode.html">Klikk her for å lære mer om koding og SEO.</a>
+            </p><hr />
+            <h4>
+                Kilder:
+            </h4>
+            <ul>
+                <li>
+                    <a href="#" target="_blank">link</a>
+                </li>
+                <li>
+                    <a href="https://www.ssb.no/virksomheter-foretak-og-regnskap/statistikker/bedrifter/aar/2017-01-20" target="_blank">SSB - virksomheter i 2017</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">link</a>
+                </li>
+            </ul>
         </article>
-        <h3>Mer lesestoff</h3>
     </main>
     <footer>
-        Philip Christopher Borgli Jensen | philip.c.jensen@hiof.no
+        <p>
+            Philip Christopher Borgli Jensen | E-post: <a href="mailto:philip.c.jensen@hiof.no">philip.c.jensen@hiof.no</a>
+        </p>
     </footer>
 </body>
 </html>
