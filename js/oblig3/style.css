@@ -1,0 +1,22 @@
+
+header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+
+
+a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+a:hover {
+    text-decoration: underline;
+}
+main {
+    margin: 1rem;
+}
+
+p {
+    padding: 0.5rem;
+}

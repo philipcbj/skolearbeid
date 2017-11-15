@@ -9,7 +9,16 @@
         window.onload = oppstart;
         
         function oppstart() {
-            //Programkode her
+            document.getElementById("knapp").onclick = visMaaned;
+        }
+        
+        function visMaaned() {
+            var maaneder = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            var tall = Number(document.getElementById("maanedsTall").value);
+            tall = tall - 1;
+            var maaned = document.getElementById("utskrift");
+            maaned.innerHTML = maaneder[tall];
+    
         }
         
     </script>
@@ -29,6 +38,9 @@
         </nav>
     </header>
     <main>
+        <input type="number" placeholder="Antall dager i måned nr." id="maanedsTall">
+        <button type="button" id="knapp">Klikk her</button>
+        <p class="utskrift"></p>
     </main>
 </body>
 </html>

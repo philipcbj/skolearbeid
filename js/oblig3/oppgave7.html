@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Oblig 3</title>
+    <script>
+    
+        window.onload = oppstart;
+        
+        function oppstart() {
+            document.getElementById("knapp").onclick = sjekkFunksjon;
+            document.getElementById("knapp2").onclick = sjekkFunksjon2;
+        }
+        function intervall(tall, fra, til) {
+            if (tall > fra && tall < til) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        function sjekkFunksjon() {
+            var tall1 = Math.floor((Math.random()*50)+1);
+            var tall2 = tall1 + Math.floor((Math.random()*50)+1);
+            var brukerinput = +document.getElementById("inputTall").value;
+            document.getElementById("utskrift").innerHTML += "Ditt tall er " + brukerinput + " og befinner seg mellom " + tall1 + " og " + tall2 + " = " + intervall(brukerinput, tall1, tall2) + "<br />";
+        }
+        function sjekkFunksjon2() {
+            for (i = 0; i < 3; i++) {
+                sjekkFunksjon();
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Oblig 3 - infprog</h1>
+        <nav>
+           <a href="oppgave1.html">Oppgave 1</a>
+           <a href="oppgave2.html">Oppgave 2</a>
+           <a href="oppgave3.html">Oppgave 3</a>
+           <a href="oppgave4.html">Oppgave 4</a>
+           <a href="oppgave5.html">Oppgave 5</a>
+           <a href="oppgave6.html">Oppgave 6</a>
+           <a href="oppgave7.html">Oppgave 7</a>
+           <a href="oppgave8.html">Oppgave 8</a>
+        </nav>
+    </header>
+    <main>
+        <p>Velg et tall mellom 0 og 100 og se om det ligger i et tilfeldig valgt intervall.</p>
+        <input type="number" id="inputTall">
+        <button type="button" id="knapp">Generer</button>
+        <button type="button" id="knapp2">Generer 3 med det samme</button>
+        <p id="utskrift"></p>
+    </main>
+</body>
+</html>

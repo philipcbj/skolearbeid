@@ -9,7 +9,15 @@
         window.onload = oppstart;
         
         function oppstart() {
-            //Programkode her
+            var studenter = ["Andre", "Pia", "Stine", "Kristin", "Espen", "Ole", "Rita", "Jonas"];
+            var tilfeldige = [];
+            
+            for (i=0; i<3; i++) {
+                var plukk = Math.floor(Math.random()*studenter.length);
+                tilfeldige[i] = studenter[plukk]
+                studenter.splice(plukk, 1);
+            }
+            document.getElementById("utskrift").innerHTML = tilfeldige;
         }
         
     </script>
@@ -29,6 +37,8 @@
         </nav>
     </header>
     <main>
+        <p>Tre tilfeldig valgte navn fra array. Navnet blir plukket ut kun én gang.</p>
+        <p id="utskrift"></p>
     </main>
 </body>
 </html>

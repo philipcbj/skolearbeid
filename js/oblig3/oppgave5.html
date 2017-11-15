@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Oblig 3</title>
+    <script>
+    
+        window.onload = oppstart;
+        
+        function oppstart() {
+            document.getElementById("knapp").onclick = opptelling;
+        }
+        function opptelling() {
+            var arrayListe = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            var brukerinput = document.getElementById("input").value;
+            var delTall = brukerinput.split(" , ");
+            
+            for (var i = 0; i < delTall.length; i++) {
+                arrayListe[delTall[i]]++;
+            }
+            document.getElementById("utskrift").innerHTML = "Antall 0-er: " + arrayListe[0] + "<br />" +
+                "Antall 1-ere: " + array[1] + "<br />" +
+                "Antall 2-ere: " + array[2] + "<br />" +
+                "Antall 3-ere: " + array[3] + "<br />" +
+                "Antall 4-ere: " + array[4] + "<br />" +
+                "Antall 5-ere: " + array[5] + "<br />" +
+                "Antall 6-ere: " + array[6] + "<br />" +
+                "Antall 7-ere: " + array[7] + "<br />" +
+                "Antall 8-ere: " + array[8] + "<br />" +
+                "Antall 8-ere: " + array[9];
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Oblig 3 - infprog</h1>
+        <nav>
+           <a href="oppgave1.html">Oppgave 1</a>
+           <a href="oppgave2.html">Oppgave 2</a>
+           <a href="oppgave3.html">Oppgave 3</a>
+           <a href="oppgave4.html">Oppgave 4</a>
+           <a href="oppgave5.html">Oppgave 5</a>
+           <a href="oppgave6.html">Oppgave 6</a>
+           <a href="oppgave7.html">Oppgave 7</a>
+           <a href="oppgave8.html">Oppgave 8</a>
+        </nav>
+    </header>
+    <main>
+        <input type="text" value="0,1,2,3,4,5,6,7,8,9" id="input">
+        <button type="button" id="knapp">Klikk her</button>
+        <p id="utskrift"></p>
+    </main>
+</body>
+</html>
